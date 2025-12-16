@@ -1,15 +1,10 @@
 # OneHub Engineering
 ## Engineering Candidate Test for OneHub
 
----
-
 ## Overview
 
 This repository contains a **Spring Boot REST API** implemented as part of the  
 **OneHub Engineering – Engineering Candidate Test**.
-
-
----
 
 ## Acceptance Criteria
 
@@ -24,8 +19,6 @@ The system must store the following employee details:
 - Email (unique)
 - Address
 
----
-
 ## Tech Stack
 
 - **Java 17**
@@ -36,8 +29,6 @@ The system must store the following employee details:
 - **H2 In-Memory Database**
 - **JUnit 5 & Mockito**
 - **Maven**
-
----
 
 ## API Endpoints
 
@@ -96,14 +87,10 @@ GET /api/employees
 ]
 ```
 
----
-
 ## Validation & Error Handling
 
 - Validation errors return 400 Bad Request
 - Duplicate email returns 409 Conflict
-
----
 
 ## Running the Application
 
@@ -117,8 +104,6 @@ The application will start on:
 ```
 http://localhost:8080
 ```
-
----
 
 ## Testing
 
