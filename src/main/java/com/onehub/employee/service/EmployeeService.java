@@ -17,11 +17,9 @@ public class EmployeeService {
     private final EmployeeRepository employeeRepository;
 
     public Employee createEmployee(CreateEmployeeRequest request) {
-
         if (employeeRepository.existsByEmail(request.getEmail())) {
             throw new DuplicateEmailException("Email already exists");
         }
-
         Employee employee = Employee.builder()
                 .employeeNo(generateEmployeeNo())
                 .title(request.getTitle())
@@ -32,7 +30,6 @@ public class EmployeeService {
                 .email(request.getEmail())
                 .address(request.getAddress())
                 .build();
-
         return employeeRepository.save(employee);
     }
 
